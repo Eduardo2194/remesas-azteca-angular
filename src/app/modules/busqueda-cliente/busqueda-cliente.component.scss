@@ -1,4 +1,9 @@
-
+.toolbar {
+  background-color: rgb(9, 122, 9);
+  width: 100vw;
+  font-size: 1.3em;
+  color: white;
+ }
 .matcard {
   display: flex;
   justify-content: center;
@@ -23,23 +28,28 @@
   flex-direction: column;
 }
 
-
-
 .form-input {
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  span {
+span {
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.1em;
+}
+
+.button {
+    width: 120%;
+    font-size: 1em;
+    background-color: rgb(172, 26, 26);
+    color: white;
   }
 
   span:nth-child(2) {
     padding: 15px;
   }
-}
 
 .actions {
   display: flex;
@@ -67,7 +77,7 @@
   top: -8px;
 }
 
-:footer {
+.footer {
   height: 10px;
   padding-top: 5px;
 }

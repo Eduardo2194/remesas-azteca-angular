@@ -1,6 +1,5 @@
-<mat-toolbar>Validacion de Información - Lista Negras - Nuevo Cliente</mat-toolbar>
-<mat-card>
-    <form (ngSubmit)="submit()" class="form">
+<mat-toolbar class = "toolbar">Validación de Información - Listas Negras - Nuevo Cliente</mat-toolbar>
+   <form [formGroup]="minRreeForm" (ngSubmit)="submit()" class="form">
       <div class="form-field">
         <div class="form-input">
           <span>País de expedición de documento </span>
@@ -15,7 +14,7 @@
       <div class="form-field">
         <div class="form-input">
           <span>Nombre </span>
-          <mat-form-field appearance="outline" floatLabel="always">
+          <mat-form-field class="" appearance="outline" floatLabel="always">
             <input
               class="input"
               #focus
@@ -82,7 +81,7 @@
       <div class="form-field">
         <div class="form-input">
           <span>Fecha de Nacimiento </span>
-          <mat-form-field appearance="fill">
+          <mat-form-field appearance="outline">
             <input matInput [matDatepicker]="picker">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
@@ -90,11 +89,10 @@
         </div>
       </div>
       <section>
-        <div class="form-input">
-          <button mat-raised-button>Validar</button>
+        <div appearance="outline" >
+          <button class="button" mat-raised-button>Validar</button>
         </div>
       </section>
-      <mat-divider></mat-divider>
-    </form>
-    </mat-card>
+      <mat-divider></mat-divider>      
+   </form>
     

@@ -1,0 +1,100 @@
+<mat-toolbar>Validacion de Información - Lista Negras - Nuevo Cliente</mat-toolbar>
+<mat-card>
+    <form (ngSubmit)="submit()" class="form">
+      <div class="form-field">
+        <div class="form-input">
+          <span>País de expedición de documento </span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div> 
+      <div class="form-field">
+        <div class="form-input">
+          <span>Nombre </span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <input
+              class="input"
+              #focus
+              matInput
+              formControlName="nroDocumento"
+              autocomplete="off"
+              required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Segundo Nombre </span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <input
+              class="input"
+              #focus
+              matInput
+              formControlName="nroDocumento"
+              autocomplete="off"
+              required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Apellido Paterno </span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <input
+              class="input"
+              #focus
+              matInput
+              formControlName="nroDocumento"
+              autocomplete="off"
+              required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Apellido Materno </span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <input
+              class="input"
+              #focus
+              matInput
+              formControlName="nroDocumento"
+              autocomplete="off"
+              required>
+          </mat-form-field>
+        </div>
+      </div>             
+      <div class="form-field">
+        <div class="form-input">
+          <span>Nombre de Empresa </span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>  
+      <div class="form-field">
+        <div class="form-input">
+          <span>Fecha de Nacimiento </span>
+          <mat-form-field appearance="fill">
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <section>
+        <div class="form-input">
+          <button mat-raised-button>Validar</button>
+        </div>
+      </section>
+      <mat-divider></mat-divider>
+    </form>
+    </mat-card>
+    

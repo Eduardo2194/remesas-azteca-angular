@@ -1,0 +1,29 @@
+<mat-toolbar>Busqueda de Remitente</mat-toolbar>
+<mat-card class="matcard">
+<form [formGroup]="minRreeForm" (ngSubmit)="submit()" class="form">
+  <div class="form-field">
+    <div class="form-input">
+      <span>Tipo Documentoss</span>
+      <mat-form-field appearance="outline" floatLabel="always">
+        <mat-select formControlName="serviceCode" required>
+          <mat-option value=""></mat-option>
+          <mat-option *ngFor="let tipoDoc of arryTipoDoc" value="{{tipoDoc}}">{{tipoDoc}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="form-input">
+      <span>Nro Documento</span>
+      <mat-form-field appearance="outline" floatLabel="always">
+        <input
+          class="input"
+          #focus
+          matInput
+          formControlName="nroDocumento"
+          autocomplete="off"
+          required>
+      </mat-form-field>
+    </div>
+  </div>
+</form>
+</mat-card>
+

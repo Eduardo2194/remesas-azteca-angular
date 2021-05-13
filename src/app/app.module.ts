@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BusquedaClienteModule } from './modules/busqueda-cliente/busqueda-cliente.module';
 import { ValidInformClienteModule } from './modules/valid-inform-cliente/valid-inform-cliente.module';
 import { InformTransferenciaModule } from './modules/inform-transferencia/inform-transferencia.module';
+import { InformIdentificacionModule } from './modules/inform-identificacion/inform-identificacion.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { InformTransferenciaModule } from './modules/inform-transferencia/inform
     BrowserAnimationsModule,
     BusquedaClienteModule,
     ValidInformClienteModule,
-    InformTransferenciaModule
+    InformTransferenciaModule,
+    InformIdentificacionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

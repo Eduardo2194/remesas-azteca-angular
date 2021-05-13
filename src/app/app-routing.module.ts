@@ -8,7 +8,9 @@ const routes: Routes = [
   { path: 'valid-inform-cliente',
   loadChildren: () => import('./modules/valid-inform-cliente/valid-inform-cliente.module').then(m => m.ValidInformClienteModule) },
   { path: 'inform-transferencia',
-  loadChildren: () => import('./modules/inform-transferencia/inform-transferencia.module').then(m => m.InformTransferenciaModule) }
+  loadChildren: () => import('./modules/inform-transferencia/inform-transferencia.module').then(m => m.InformTransferenciaModule) },
+  { path: 'inform-identificacion',
+  loadChildren: () => import('./modules/inform-identificacion/inform-identificacion.module').then(m => m.InformIdentificacionModule) }
 ];
 
 @NgModule({

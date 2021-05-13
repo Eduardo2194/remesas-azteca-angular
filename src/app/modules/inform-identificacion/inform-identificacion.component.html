@@ -1,0 +1,102 @@
+<mat-toolbar class = "toolbar">Documento de Identificacion</mat-toolbar>
+   <form [formGroup]="minRreeForm" (ngSubmit)="submit()" class="form">
+      <div class="form-field">
+        <div class="form-input">
+          <span>Fecha de Caducidad</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Fecha de Emision</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Pais de Nacimiento</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Sexo</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Ocupación</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Puesto / cargo</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Motivo de transacción</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Origen de fondos</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div class="form-input">
+          <span>Relación con el destinatario</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>                                                            
+</form>      

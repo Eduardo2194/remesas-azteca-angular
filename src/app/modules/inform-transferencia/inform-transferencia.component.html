@@ -1,0 +1,86 @@
+<mat-toolbar class = "toolbar">Información de la Transferencia</mat-toolbar>
+   <form [formGroup]="minRreeForm" (ngSubmit)="submit()" class="form">
+      <div class="form-field">
+        <div class="form-input">
+          <span>Moneda de Envío</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div> 
+      <div class="form-field">
+        <div class="form-input">
+          <span>País de Pago</span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-select formControlName="serviceCode" required>
+              <mat-option value=""></mat-option>
+              <mat-option *ngFor="let pais of arrayPais" value="{{pais}}">{{pais}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-field">
+        <div >
+          <span>Tipo de Cambio</span>
+          <span>1 USD = 1.000000 USD</span>
+        </div>
+       </div>
+       <div class="form-field">
+        <div >
+          <span>Cantidad de Envío </span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <input
+              class="input"
+              #focus
+              matInput
+              formControlName="nroDocumento"
+              autocomplete="off"
+              required>
+          </mat-form-field>
+          <span>Cantidad a Recibir </span>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <input
+              class="input"
+              #focus
+              matInput
+              formControlName="nroDocumento"
+              autocomplete="off"
+              required>
+          </mat-form-field>
+        </div>
+       </div>
+       <div class="form-field">
+        <div class="form-input">
+         <mat-card-actions>
+          <section>
+            <div >
+              <button class="button" mat-raised-button>Cotizar</button>
+            </div>
+          </section>
+         </mat-card-actions>
+        </div>
+       </div>
+       <br>
+       <div class="form-field">
+        <div class="form-input2">
+       <table width="100%" border="1">
+        <tr>
+          <th >Comisión</th>
+          <th>4.24</th>
+        </tr>
+        <tr>
+          <th >IGV(18%)</th>
+          <th>0.75</th>
+        </tr>
+        <tr>
+          <th >ITF(0,005)</th>
+          <th>0.00</th>
+        </tr>
+        </table> 
+       </div>  
+      </div>        
+   </form>
+    

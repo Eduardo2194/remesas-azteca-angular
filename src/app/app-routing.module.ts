@@ -6,7 +6,9 @@ const routes: Routes = [
   { path: 'busqueda-cliente',
   loadChildren: () => import('./modules/busqueda-cliente/busqueda-cliente.module').then(m => m.BusquedaClienteModule) },
   { path: 'valid-inform-cliente',
-  loadChildren: () => import('./modules/valid-inform-cliente/valid-inform-cliente.module').then(m => m.ValidInformClienteModule) }
+  loadChildren: () => import('./modules/valid-inform-cliente/valid-inform-cliente.module').then(m => m.ValidInformClienteModule) },
+  { path: 'inform-transferencia',
+  loadChildren: () => import('./modules/inform-transferencia/inform-transferencia.module').then(m => m.InformTransferenciaModule) }
 ];
 
 @NgModule({

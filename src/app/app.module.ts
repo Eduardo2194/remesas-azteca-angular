@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BusquedaClienteModule } from './modules/busqueda-cliente/busqueda-cliente.module';
 import { ValidInformClienteModule } from './modules/valid-inform-cliente/valid-inform-cliente.module';
+import { InformTransferenciaModule } from './modules/inform-transferencia/inform-transferencia.module';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { ValidInformClienteModule } from './modules/valid-inform-cliente/valid-i
     AppRoutingModule,
     BrowserAnimationsModule,
     BusquedaClienteModule,
-    ValidInformClienteModule
+    ValidInformClienteModule,
+    InformTransferenciaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
